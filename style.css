@@ -1,0 +1,148 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: 'Roboto', sans-serif;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.page{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* left side */
+.left-img {
+    background-image: url(./images/nightSky.jpg);
+    background-size: cover;
+    width: 40vw;
+}
+
+.logo {
+    margin-top: 20vh;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.5);
+
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.logo-img {
+    max-height: 80%;
+    margin-bottom: 9px;
+}
+
+/* right side */
+.right-side {
+    width: 60vw;
+    background-color: #152026;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-side > * {
+    color: #a4a4a4;
+    margin: 35px 100px 25px 30px;
+    font-size: 1rem;
+}
+
+.txt-box {
+    margin: 55px 100px 25px 30px;
+    font-size: 1.5rem;
+}
+
+.remote-txt-box {
+    font-size: 1.5rem;
+    color: #eb633b;
+}
+
+/* form */
+.form-box {
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #f4f4f4;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 10px 10px 20px 0px;
+}
+
+input {
+    background-color: #20313A;
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: #a4a4a4;
+    width: clamp(150px 50% 250px);
+}
+
+input:focus {
+    border-color: #eb633b;
+}
+
+/*
+input:invalid {
+    border: 2px solid red;
+}
+*/
+
+fieldset {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: #a4a4a4;
+}
+
+.btn-submit {
+    margin-top: 35px;
+    width: 40%;
+    background-color: rgba(0,0,0,0);
+    border: 2px solid #eb633b;
+    border-radius: 5px;
+    color: #eb633b;
+    font-size: 1rem;
+    padding: 10px 0px 10px 0px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="page">
+        <div class="left-img">
+            <div class="logo">BitMap
+                <img src="./images/maps.png" alt="logo" class="logo-img">
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="txt-box">
+                This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
+                Sign up now to get started.
+            </div>
+            <div class="remote-txt-box">You know you want to!</div>
+            <form action="#" class="form-box">
+                <fieldset>
+                    <div class="inputForm">
+                        <label for="firstName">
+                            <span>FIRST NAME</span>
+                        </label>
+                        <input type="name" id="firstName" name="userFirst" placeholder=" " required>
+                    </div>
+                    <div class="inputForm">
+                        <label for="lastName">
+                            <span>LAST NAME</span>
+                        </label>
+                        <input type="name" id="lastName" name="userLast" placeholder=" " required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="inputForm">
+                        <label for="userEmail">
+                            <span>EMAIL</span>
+                        </label>
+                        <input type="email" id="userEmail" name="userEmail" placeholder=" " required>
+                    </div>
+                    <div class="inputForm">
+                        <label for="phoneNumber">
+                            <span>PHONE NUMBER</span>
+                        </label>
+                        <input type="tel" id="phoneNumber" 
+                        pattern="^(\((\d{3})\)|(\d{3}))-?(\d{3})-?(\d{4})$" 
+                        oninvalid="this.setCustomValidity('Please use (123)-123-1234 or 123-123-1234')"
+                        name="userPhone" placeholder=" " required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="inputForm">
+                        <label for="userPass">
+                            <span>PASSWORD</span>
+                        </label>
+                        <input type="password" id="userPass" name="userPass" placeholder=" " required>
+                    </div>
+                    <div class="inputForm">
+                        <label for="confirmPass">
+                            <span>CONFIRM PASSWORD</span>
+                        </label>
+                        <input type="password" id="confirmPass" name="confirmPass" placeholder=" " required>
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn-submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

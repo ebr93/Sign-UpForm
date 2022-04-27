@@ -124,7 +124,7 @@ input:focus {
     border-color: #eb633b;
 }
 
-/*
+/* it automatically sets them red on load
 input:invalid {
     border: 2px solid red;
 }
